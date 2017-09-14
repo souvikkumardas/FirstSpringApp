@@ -7,6 +7,7 @@ public class MainTest {
 		FileSystemXmlApplicationContext ac = new FileSystemXmlApplicationContext("springBeanContext.xml");
 		TestSpring ts = ac.getBean(TestSpring.class);
 		ts.firstTest();
+		System.out.println("Testing Done");
 		ac.close();
 	}
 }
